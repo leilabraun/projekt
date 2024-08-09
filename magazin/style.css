@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@200;300;400;700;800&family=Oswald:wght@700&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Gupter:wght@400;500;700&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@200;300;400;700;800&family=Oswald:wght@700&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+
+/* --- Grundlagen */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Verhindert horizontales Scrollen für das gesamte Dokument */
+}
+
+* {
+    margin: 0 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    font-family: 'Playfair Display';
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+
+}
+  
+
+ /* --- Header */
+header h1{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 3rem;
+    /* margin-top: 3rem; */
+    font-family: Bona Nova SC; 
+
+}
+
+
+
+header {
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    width: 100%;
+    margin-bottom: -10rem;
+    text-align: center;
+    background-color:#C3B3D7;
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20rem;   
+
+}
+
+.intro-article {
+    display: flex;
+    gap: 10%;
+
+    background-color:#C3B3D7;
+
+}
+
+.intro-image {
+    width: 55%;
+    margin-left: 10%;
+}
+
+.intro-image img {
+    width: 100%;
+}
+
+/* Titel */
+.intro-text h1 {
+    font-family: 'Gupter';
+
+    font-size: 7rem;
+    padding-top: 5rem;
+
+}
+.intro-text {
+    width: 35%;
+        color:#D35E49;
+        margin-top: 10%;
+        margin-right: 5%;
+        
+}
+
+.intro-article h1 {
+
+    font-size: 150pt;
+}
+
+.anfang{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/***************************Burger Menu***********************************/
+
+.burger-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+    position: relative;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+
+}
+
+.menu-div {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    flex-direction: column;
+    background-color: #216477;
+    padding: 10px;
+    border: 1px solid #7373cc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    text-decoration: none;
+} 
+
+.menu {
+    padding-left: 0;
+}
+
+.menu li {
+    list-style: none;
+    padding-bottom: 4px;
+    
+}
+.menu li a:hover {
+   color: #828282; 
+}
+
+/* Streifen */
+.menu a {
+    text-decoration: none;
+ 
+    color: #fff; 
+    font-size: 18px;
+    margin-bottom: 10px;
+
+    
+
+}
+
+.menu-div.active {
+    display: flex;
+
+
+}
+
+
+
+/***************************** Inhalt ********************************************************************************************************/
+main {
+    max-width: 1500px;
+    padding: 100px 0;
+    margin: 0 auto;
+    min-height: 60vh;
+    color: #000000;
+}
+
+main a:hover {
+  text-decoration: none;
+}
+
+
+.dein-text-klasse {
+    clear: left; /* sorgt dafür, dass der Text unterhalb des Bildes nicht umbricht */
+}
+
+
+
+
+.bild1 {
+    display: flex;
+    justify-content: center; /* Zentriert das Bild horizontal */
+    align-items: center; /* Zentriert das Bild vertikal */
+    margin-top: 20rem;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.bild1 img {
+    width: 100%; /* Bild auf 100% der Container-Breite setzen */
+    height: auto; /* Höhe proportional zur Breite anpassen */
+    max-width: 100%; /* Verhindert, dass das Bild größer als der Container wird */
+    display: block; /* Entfernt unerwünschte Leerzeichen unter dem Bild */
+    margin: 0 auto; /* Zentriert das Bild horizontal innerhalb des Containers */
+    margin-left: 20%;
+}
+.name1 {
+    display: flex;
+   margin-left: 50%;
+   margin-top: -4rem;
+   
+   text-align: justify;
+   margin-right: 2%;
+   font-size: 50px;
+}
+
+
+
+/* Container Bild 2 */
+.bild2-container {
+    position: relative; /* Positionierung für den Container */
+    width: 100vw; /* Breite des Containers auf 100% des Viewports setzen */
+    margin-bottom: 40%;
+}
+
+.bild2 {
+    margin-top: 10rem;
+    border-color:#D35E49;
+    border-width: 40px;
+    border-style: solid;
+    background-color:#D35E49;
+}
+
+.bild2 img {
+    width: 30%; /* Bild passt sich der Breite des übergeordneten Containers an */
+    height: auto; /* Höhe passt sich proportional zur Breite an */
+    max-width: 100%; /* Verhindert, dass das Bild größer als der Container wird */
+    margin-left: 10%;
+}
+
+.text2 {  
+    text-align: justify;
+    margin-top: -30rem;
+    margin-left: 50%;
+    margin-right: 10%;
+    font-size: 12pt;
+    color: #C3B3D7;
+}
+
+/* Container für Bild 3 */
+.bild3-container {
+    position: relative; /* Positionierung für den Container */
+    width: 100vw; /* Breite des Containers auf 100% des Viewports setzen */
+    margin-bottom: 20%; /* Abstand unterhalb des Containers */
+}
+
+/* Bild 3 */
+.bild3 img {
+    width: 100%; /* Bild passt sich der Breite des Containers an */
+    height: auto; /* Höhe proportional zur Breite */
+    display: block; /* Verhindert ungewollten unteren Abstand */
+}
+
+/* Text 3 */
+.text3 {
+    position: absolute; /* Absolute Positionierung für den Text */
+    
+    left: 0; /* Text am linken Rand des Containers */
+    right: 0; /* Text am rechten Rand des Containers */
+    bottom: 0; /* Text am unteren Rand des Containers */
+    writing-mode: vertical-rl; /* Text wird vertikal von rechts nach links geschrieben */
+    text-orientation: sideways-left;
+    transform: rotate(180deg); /* Dreht das gesamte Element um 180 Grad */
+    /* color: #D35E49; */
+    color:#3a3a3a;
+    font-size: 120pt;
+    margin-left: 50%;
+  
+    text-align: center; /* Zentriert den Text innerhalb des Containers */
+}
+
+
+
+
+.bild4-container {
+    position: relative; /* Positionierung für den Container */
+    margin-bottom: 40%;
+    background-color: #C3B3D7;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin-bottom: 0;
+
+}
+.bild4 img {
+    width: 50%; /* Bild passt sich der Breite des Containers an */
+    height: auto; /* Höhe proportional zur Breite */
+    display: block; /* Verhindert ungewollten unteren Abstand */
+}
+.text4 {
+    margin-left: 30%;
+    margin-top: -20%;
+    font-size: 140pt;
+    color: #D35E49;
+}
+
+.bild5-container{
+    margin-top: 0;
+    margin-bottom: 15%;
+}
+
+.bild5 img {       
+    transform: rotate(180deg);
+    width: 60%;
+    margin-left: 50%;
+   
+}
+
+.text5 {
+    font-size: 150pt;
+    margin-top: -40%;
+    margin-left: 5%;
+  
+}
+
+
+.bild6 img {       
+    margin-top: 10%;
+    width: 60%;
+ 
+    margin-left: 5%;
+
+
+}
+
+
+
+
+
+.bild6-container {
+    position: relative; /* Positionierung für den Container */
+    margin-bottom: 40%;
+   
+    padding-bottom: 10%;
+
+    margin-bottom: 20%;
+}
+
+
+.text6 {
+    font-size: 150pt;
+    margin-top: -40%;
+ 
+    margin-left: 55%;
+  
+}
+
+.text7 {
+    font-size: 50pt;
+}
+.poetry-container {
+    display: flex;          /* Verwenden Sie Flexbox, um die Spalten zu erstellen */
+    gap: 10%;              /* Abstand zwischen den Spalten */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    border-color: #D35E49;
+}
+
+.text8 {
+    font-size: 50pt;
+    margin-left: 50%;
+}
+
+.name2{
+    position: absolute; /* Absolute Positionierung für den Text */
+   
+    /* color: #D35E49; */
+    color:#D35E49;
+    font-size: 50pt;
+    margin-top: -5px;
+    
+  
+    text-align: center; /* Zentriert den Text innerhalb des Containers */
+}
+
+.poetry, .poetry2 {
+    flex: 1;                /* Beide Spalten nehmen gleich viel Platz ein */
+}
+
+.poetry {
+    margin-top: 12%;
+    padding: 10px;             /* Innenabstand */
+}
+
+.poetry2 {
+    padding: 10px;             /* Innenabstand */
+}
+
+.bild7-container{
+    background-color: #D35E49;
+    padding-top: 10%;
+}
+
+.bild7 img  {       
+   text-align: center;
+    width: 40%;
+   
+  
+  }
+
+  .bild8-container{
+    margin-bottom: 10%;
+  }
+
+.bild8{
+    background-color: #D35E49;
+    padding-bottom: 10%;
+
+  }
+  
+.bild8 img  {       
+        margin-left: 50%;
+       width: 40%;
+       margin-top: -40%;
+    
+   }
+
+
+.bild9 img{
+    width: 40%;
+}
+
+
+
+
+
+.bild10 img{
+    width: 40%;
+    padding-right: 0;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+/*------ Profile*/
+
+.profile-container {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/* --- Footer */
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #3a3a3a;
+    color: white;
+
+}
+
+
+/* Pop Up********************************************/
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
